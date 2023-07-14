@@ -280,13 +280,13 @@ body {
 }
 
 #card1 {
-   background-image: url('/vids/cr7-3-g33037b78a_1280.png');
+   background-image: url('vids/cr7-3-g33037b78a_1280.png');
    /* background: no-repeat contain contain; */
    background-size: cover;
 }
 
 #card2 {
-   background-image: url('/vids/cr7-4.jpg');
+   background-image: url('vids/cr7-4.jpg');
    /* background: no-repeat contain contain; */
    background-size: cover;
    background-position: -83px 0;
