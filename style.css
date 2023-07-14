@@ -1,0 +1,439 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'montserrat';
+   color: #fff;
+}
+
+html,
+body {
+   height: 100%;
+   width: 100%;
+   /* overflow: hidden; */
+
+}
+
+
+
+
+#nav {
+   height: 150px;
+   width: 100%;
+   /* background-color: red; */
+   display: flex;
+   position: fixed;
+   align-items: center;
+   gap: 45px;
+   padding: 0 150px;
+   justify-content: flex-start;
+   z-index: 1;
+
+
+}
+
+#nav img {
+   height: 80px;
+}
+
+#nav h4 {
+   text-transform: uppercase;
+   font-weight: 500;
+}
+
+#cr7-1 {
+   position: fixed;
+   height: 100%;
+   object-fit: cover;
+   width: 100%;
+   z-index: -1;
+
+}
+
+#main {
+   position: relative;
+   background-color: rgba(0, 0, 0, 0.316)
+}
+
+#page1 {
+   height: 100vh;
+   width: 100%;
+   /* position: relative; */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   z-index: 10;
+
+
+}
+
+
+.red {
+   color: red;
+}
+
+#page1 h1 {
+   font-size: 7.5vw;
+   font-weight: 900;
+   position: relative;
+   /* z-index: -1; */
+
+
+}
+
+#page1 h1::before {
+
+   content: "Ronaldo.IS.Red";
+   position: absolute;
+   color: rgb(0, 0, 0);
+   top: -5px;
+   left: -5px;
+   -webkit-text-stroke: 1.5px #00000058;
+   z-index: -1;
+
+
+}
+
+
+
+#page1 h2 {
+   padding: 15px 0;
+   font-size: 30px;
+   font-weight: 800;
+}
+
+#page1 p {
+   font-size: 15px;
+   font-weight: 400;
+   width: 50%;
+   line-height: 2;
+}
+
+#page2 {
+   min-height: 100vh;
+   width: 100%;
+   z-index: 10;
+}
+
+#scroller {
+
+   /* background-color: red; */
+   overflow-y: hidden;
+   overflow-x: auto;
+
+   /* white-space: nowrap; */
+
+   position: relative;
+   z-index: 10;
+
+
+}
+
+#scroller h4 {
+   display: inline-block;
+   font-size: 100px;
+   font-weight: 900;
+   font-family: gilroy;
+   padding: 232px 100px;
+   color: transparent;
+   margin-right: 10px;
+   transition: all linear 0.5s;
+   -webkit-text-stroke: 2px rgba(255, 25, 25, 0.698);
+
+
+}
+
+#scroller h4:hover {
+   cursor: pointer;
+   color: rgb(225, 76, 76);
+}
+
+
+#scroller-in {
+
+   display: inline-block;
+
+   white-space: nowrap;
+   animation-name: scroll;
+   animation-duration: 30s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+
+}
+
+::-webkit-scrollbar {
+   display: none;
+}
+
+
+
+@keyframes scroll {
+   from {
+      transform: translateX(0);
+   }
+
+   to {
+      transform: translateX(-100%);
+   }
+}
+
+#about {
+   height: 100vh;
+   width: 100%;
+   background-color: black;
+   display: flex;
+   /* padding: 0 50px; */
+   padding-top: 100px;
+
+   align-items: center;
+   justify-content: space-around;
+
+}
+
+
+
+
+
+#about-in {
+   width: 40%;
+   text-align: center;
+
+}
+
+
+#about-in h3 {
+   font-size: 34px;
+   position: absolute;
+   justify-content: center;
+   display: inline;
+   left: 300px;
+   width: 50%;
+
+   font-weight: 800;
+   margin-top: -350px;
+   color: rgba(255, 0, 0, 0.568);
+
+
+
+}
+
+
+
+
+.cr7-2 {
+   /* z-index: 99; */
+   position: relative;
+   display: flex;
+   margin-left: 396px;
+   margin-top: -192px;
+   height: 40vh;
+   /* width: 100%; */
+   border-radius: 20px;
+   box-shadow: 0px 3px 7px 5px white;
+   overflow: hidden;
+
+}
+
+.cr7-3 {
+   /* z-index: 99; */
+   position: relative;
+   display: flex;
+   margin-left: -355px;
+   margin-top: -240px;
+   height: 40vh;
+   border-radius: 20px;
+   box-shadow: 0px 3px 7px 5px white;
+   overflow: hidden;
+   /* width: 100%; */
+
+}
+
+#card-container {
+   /* background-color: red; */
+   display: flex;
+   height: 60vh;
+   align-items: center;
+   justify-content: space-evenly;
+   gap: 70px;
+
+
+}
+
+.cards {
+   height: 80%;
+   width: 24%;
+   background-color: blue;
+   border-radius: 20px;
+   text-align: center;
+
+
+
+
+
+}
+
+.cards h3 {
+   line-height: 3;
+   text-transform: uppercase;
+}
+
+#card1 {
+   background-image: url('/vids/cr7-3-g33037b78a_1280.png');
+   /* background: no-repeat contain contain; */
+   background-size: cover;
+}
+
+#card2 {
+   background-image: url('/vids/cr7-4.jpg');
+   /* background: no-repeat contain contain; */
+   background-size: cover;
+   background-position: -83px 0;
+}
+
+#card3 {
+   background-image: url('/vids/cr7-madrid.jpg');
+   /* background: no-repeat contain contain; */
+   background-size: cover;
+   background-position: -13px 0px;
+
+
+
+}
+
+.overlay {
+   height: 100%;
+   width: 100%;
+   background-color: #0000007d;
+   padding-top: 100px;
+   border-radius: 20px;
+   align-items: center;
+   transition: all ease 0.6s;
+   opacity: -1;
+
+   /* align-items: center; */
+
+}
+
+.overlay h3 {
+   font-weight: 800;
+   white-space: nowrap;
+   color: rgb(235, 235, 235);
+}
+
+.overlay p {
+   color: rgb(255, 255, 255);
+   font-size: 15px;
+}
+
+.cards .overlay:hover {
+   /* cursor: pointer; */
+   opacity: 1;
+}
+
+.cards:hover {
+   transform: rotate3d(-1, -1, 0, 18deg);
+   transition: all ease 0.6s;
+}
+
+
+@media(max-width:500px) {
+
+
+
+   body {
+      height: 50%;
+      width: 50%;
+      
+   }
+
+   #main{ 
+
+      width: 100vw;
+      overflow: hidden;
+   }
+
+   #nav {
+      justify-content: center;
+      left: -14px;
+
+   }
+
+   #nav>img {
+      height: 40px;
+   }
+
+   #nav h4 {
+      white-space: nowrap;
+      font-size: 10px;
+      align-items: center;
+      justify-content: center;
+
+   }
+
+   #cr7-1{ 
+     
+   }
+
+   #page1 h1 {
+      font-size: 5.5vw;
+      font-weight: 900;
+      position: relative;
+   }
+
+
+   #page1 h2 {
+      padding: 15px 0;
+      font-size: 11px;
+      font-weight: 800;
+   }
+
+
+   #page1 p {
+      font-size: 6px;
+      font-weight: 400;
+      width: 50%;
+      line-height: 2;
+   }  
+
+   #page2{ 
+      background-color: black;
+   }
+
+   #scroller h4{ 
+      font-size: 50px;
+   }
+
+   #about{ 
+      justify-content: center;
+   }
+
+   .cr7-2 { 
+      position: absolute;
+      margin-left: -37px;
+      margin-top: -80px;
+      height: 30vh;
+   }
+   .cr7-3 { 
+       
+      margin-left: -34px;
+      margin-top: -240px;
+      height: 30vh;
+   }
+
+   #about-in h3{ 
+      font-size: 15px;
+      left: 121px;
+   }
+
+   #card-container{ 
+      display: none;
+   }
+
+
+
+
+
+
+}
