@@ -293,7 +293,7 @@ body {
 }
 
 #card3 {
-   background-image: url('/vids/cr7-madrid.jpg');
+   background-image: url('vids/cr7-madrid.jpg');
    /* background: no-repeat contain contain; */
    background-size: cover;
    background-position: -13px 0px;
